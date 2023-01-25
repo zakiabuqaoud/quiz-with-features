@@ -37,11 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
   bool isSwiched = false;
   int questionIndex = 0;
   int totalScore = 0;
-  List<int> scoreDuringTesting = [];
+  List<int> scoreDuringTesting = [0,0,0,0,0,0,0,0,0,0];
 
 
   void increaseQuestionIndex(int score) {
-    scoreDuringTesting.length = 10;
     if (questionIndex < questionsAndAnswers.length) {
       scoreDuringTesting[questionIndex] = score ;
       totalScore += score;
